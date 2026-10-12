@@ -1,0 +1,29 @@
+# SmartVoyage 依赖清单
+#
+# 建议使用 Python 3.10 ~ 3.12。
+# 不建议使用 3.13/3.14：langchain、pymilvus 等依赖在其上的预编译包尚不完整，安装容易失败。
+#
+# 安装：pip install -r requirements.txt
+
+# ---------- Web 服务 ----------
+fastapi
+uvicorn
+pydantic
+
+# ---------- LLM / Agent 编排 ----------
+langchain
+langchain-core
+langchain-openai
+
+# ---------- A2A 协议 + MCP ----------
+# 提供 A2AServer / AgentNetwork / FastMCP / to_langchain_tool
+python-a2a
+
+# ---------- 数据存储 ----------
+mysql-connector-python
+pymilvus
+
+# ---------- 其他 ----------
+requests
+pytz
+schedule
